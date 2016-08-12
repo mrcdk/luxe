@@ -339,7 +339,7 @@ class Renderer {
         #if !desktop
             frag = "precision mediump float;\n" + frag;
             frag_textured = "precision mediump float;\n" + frag_textured;
-            frag_bitmapfont = "#extension GL_OES_standard_derivatives : enable\n#extension OES_standard_derivatives : enable\nprecision mediump float;\n" + frag_bitmapfont;
+            frag_bitmapfont = "#extension GL_OES_standard_derivatives : enable\n#extension OES_standard_derivatives : enable\nprecision highp float;\n" + frag_bitmapfont;
         #end
 
         var _plain = new Shader({ id:'luxe.shader', frag_id:'default', vert_id:'default' });
