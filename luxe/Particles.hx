@@ -16,6 +16,8 @@ class ParticleSystem extends Entity {
         /** The list of emitters by name. :todo: This is outdated in the new component layout. */
     public var emitters : Map<String, ParticleEmitter>;
 
+    public var clip_rect: Rectangle;
+
 
     override public function init( ) {
 
@@ -547,6 +549,8 @@ class ParticleEmitter extends Component {
         particle.sprite.color = particle.color;
         particle.sprite.pos.copy_from(particle.pos);
         particle.sprite.rotation_z = particle.rotation;
+        
+        particle.sprite.clip_rect = system.clip_rect;
 
     } //reset_particle
 
