@@ -3,7 +3,7 @@
   project : {
 
       //These first two are required
-    name : 'empty',
+    name : 'cursor',
     version : '1.0.0',
     author : 'luxeengine',
 
@@ -11,8 +11,8 @@
       //The package is important, it's used 
       //for save locations, initializing mobile project files etc
     app : {
-      name : 'luxe_empty',
-      package : 'com.luxeengine.empty'
+      name : 'luxe_cursor',
+      package : 'com.luxeengine.cursor'
     },
 
       //This configures the build process
